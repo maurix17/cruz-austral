@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruz Austral | Sublimación y Regalos Personalizados en Buenos Aires</title>
+  <meta name="description" content="Especialistas en sublimación y regalos personalizados en Buenos Aires. Tazas, almohadones y más. Diseños únicos para Navidad y toda ocasión. Envíos a CABA y GBA.">
+  <meta name="keywords" content="sublimación Argentina, regalos personalizados, tazas personalizadas, almohadones personalizados, Cruz Austral sublimación, productos personalizados Buenos Aires, regalos navideños personalizados">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #2B4C7E;
+      --accent: #D4AF37;
+    }
+
+    .hero-pattern {
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232b4c7e' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .nav-link {
+      position: relative;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background-color: var(--accent);
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 80%;
+      left: 10%;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(43, 76, 126, 0.2);
+    }
+  </style>
+</head>
+<body class="hero-pattern min-h-screen text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-primary">Cruz Austral</h1>
+      <nav class="flex space-x-4">
+        <a href="#" class="nav-link text-gray-700 hover:text-primary">Inicio</a>
+        <a href="#productos" class="nav-link text-gray-700 hover:text-primary">Productos</a>
+        <a href="#contacto" class="nav-link text-gray-700 hover:text-primary">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex items-center justify-center h-[60vh] text-center">
+    <div class="p-8">
+      <h2 class="text-4xl font-bold text-primary">Regalos Personalizados únicos</h2>
+      <p class="text-gray-600 mt-4">Descubrí nuestra línea de sublimación para cualquier ocasión. Diseños exclusivos para vos o para regalar.</p>
+      <a href="#productos" class="btn-primary mt-6 inline-block">Ver Catálogo</a>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold text-primary mb-6 text-center">Nuestros Productos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Producto 1 -->
+        <div class="bg-white p-6 shadow-md rounded-md text-center">
+          <h4 class="text-xl font-bold text-gray-700">Tazas Personalizadas</h4>
+          <p class="text-gray-600 mt-2">Perfectas para regalar o para vos. Diseños exclusivos.</p>
+        </div>
+        <!-- Producto 2 -->
+        <div class="bg-white p-6 shadow-md rounded-md text-center">
+          <h4 class="text-xl font-bold text-gray-700">Almohadones</h4>
+          <p class="text-gray-600 mt-2">Agregá un toque personal a tu hogar con nuestros almohadones sublimados.</p>
+        </div>
+        <!-- Producto 3 -->
+        <div class="bg-white p-6 shadow-md rounded-md text-center">
+          <h4 class="text-xl font-bold text-gray-700">Llaveros</h4>
+          <p class="text-gray-600 mt-2">Un detalle ideal para regalar en cualquier ocasión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-primary mb-6">Contacto</h3>
+      <p class="text-gray-600">Envianos un mensaje para pedidos o consultas. Estamos para ayudarte.</p>
+      <a href="mailto:contacto@cruzaustral.com" class="btn-primary mt-4 inline-block">Escribinos</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Cruz Austral. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
